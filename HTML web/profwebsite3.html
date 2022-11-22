@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chords2Inspire!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="prof website css.css">
+<script type="text/javascript" src="Website.js" defer></script>
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>Chords2Inspire!</b></h1>
+  <p>A blog for music and musicians. <span class="w3-tag">𝅘𝅥𝅮</span></p>
+</header>
+
+<!-- Grid -->
+<div class="w3-row">
+
+<!-- Blog entries -->
+<div class="w3-col l8 s12">
+  <!-- Blog entry -->
+  <div class="container", id="box"></div><hr>
+
+  <div class="button-container", id="box2">
+  <button class="draggable", id="1", draggable="true">
+    <span class="txtinbtn">
+    I
+    </span>
+    </button>
+  <button class="draggable", id="2", draggable="true">
+    <span class="txtinbtn">
+    ii
+    </span>
+    </button>
+  <button class="draggable", id="3", draggable="true">
+    <span class="txtinbtn">
+    iii
+    </span>  
+    </button>  
+  <button class="draggable", id="4", draggable="true">
+   <span class="txtinbtn">
+    IV
+   </span>
+    </button>
+  <button class="draggable", id="5", draggable="true">
+    <span class="txtinbtn">
+    V
+    </span>  
+    </button>
+  <button class="draggable", id="6", draggable="true">
+    <span class="txtinbtn">
+    vi
+    </span>
+    </button>
+  <button class="draggable", id="7", draggable="true">
+    <span class="txtinbtn">
+    vii°
+    </span>
+    </button>
+
+  </div>
+  <hr>
+  <div class="playclear">
+  <button class="play", onclick="runplay()">
+    Play
+  </button>
+  
+  <!--<button id="clear">
+    Clear
+  </button>-->
+  <hr>
+  Drag the chords into the white container in any order you like,<br> then click play to
+  make your own chord progression! 
+  </div>
+  
+  <hr>
+
+  <div id="poon" class="piano">
+    <button data-note="F-4" class="white b key KeyQ">Q</button> 
+    <button data-note="F#4" class="black as key KeyW">W</button>
+    <button data-note="G-4" class="white a key KeyE">E</button>
+    <button data-note="G#4" class="black gs key KeyR">R</button>
+    <button data-note="A-4" class="white g key KeyT">T</button>
+    <button data-note="A#4" class="black fs key KeyY">Y</button>
+    <button data-note="B-4" class="white f key KeyU">U</button>
+    <button data-note="C-5" class="white e key KeyI">I</button>
+    <button data-note="C#5" class="black ds key KeyO">O</button>
+    <button data-note="D-5" class="white d key KeyP">P</button>
+    <button data-note="D#5" class="black cs key BracketLeft">[</button>
+    <button data-note="E-5" class="white c key BracketRight">]</button>
+    <button data-note="F-5" class="white b key KeyA">A</button> 
+    <button data-note="F#5" class="black as key KeyS">S</button>
+    <button data-note="G-5" class="white a key KeyD">D</button>
+    <button data-note="G#5" class="black gs key KeyF">F</button>
+    <button data-note="A-5" class="white g key KeyG">G</button>
+    <button data-note="A#5" class="black fs key KeyH">H</button>
+    <button data-note="B-5" class="white f key KeyJ">J</button>
+    <button data-note="C-6" class="white e key KeyK">K</button>
+    <button data-note="C#6" class="black ds key KeyL">L</button>
+    <button data-note="D-6" class="white d key Semicolon">;</button>
+    <button data-note="D#6" class="black cs key Quote">'</button>
+    <button data-note="E-6" class="white c key Backslash">#</button>
+    
+  
+  </div>
+
+  <div class="playclear">
+    Alter the settings below, then press the<br> listed keys on your keyboard to test
+    out your own sounds.
+    </div>
+  
+  
+  <div class="controls">
+    <span>Oscillator</span>
+  <input type="range" class="range" min="0" max="3" step="1" value="0" />
+    <p>SIN&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;SQR&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;SAW&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;TRNGL</p>
+  </div>
+
+  <!-- Blog entry -->
+  
+<!-- END BLOG ENTRIES -->
+</div>
+
+<!-- Introduction menu -->
+<div class="w3-col l4">
+  <!-- About Card -->
+  <div class="w3-card w3-margin w3-margin-top">
+  <!--<img src="/w3images/avatar_g.jpg" style="width:100%">-->
+    <div class="w3-container w3-white">
+      <h4><b>Hi, I'm Ludoo, and welcome to my blog!</b></h4>
+      <p>Chords2Inspire is a blog website for musicians who like making and reading about music.
+        On the one side, you can read posts of me analysing my favorite music and seeing what makes them so catchy!
+        On the other side, I've developed tools for musicians that can help them get inspired through things such as sound synthesis and making chord progressions.
+        This website is still in development, however any constructive feedback is welcomed. Just email me at stludoo6@gmail.com.
+      </p>
+    </div>
+  </div><hr>
+  
+<!-- END Introduction Menu -->
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom", onclick="history.back()">Previous</button>
+  <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Next »</button>
+  <p>Powered by Sultry Ludoo</p>
+</footer>
+
+</body>
+</html>
